@@ -1,0 +1,28 @@
+function doFirst(){
+	var can = document.getElementById('canvas');
+	canvas = can.getContext('2d');
+
+	var img = new Image();
+	img.src = "images/ucn1.png";
+	
+	img.addEventListener("load", function(){
+		canvas.drawImage(img, 0, 0)
+	}, false);
+	
+	var can2 = document.getElementById('icon');
+	var ctx = can2.getContext('2d');
+	
+	var x = 340;
+	var y = 77;
+	var radius = 5;
+
+	ctx.beginPath();
+	ctx.arc(x, y, radius, 0, 2 * Math.PI, false);
+	ctx.fillStyle = 'pink';
+	ctx.fill();
+	ctx.stroke();	
+
+
+}
+window.addEventListener("load", doFirst(), false);
+

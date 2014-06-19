@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Video</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/> 
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/time.js"></script>
+	</head>
+	<body>
+		<div id="media">
+		<div id="silence"><img src="images/silence.png"/></div>
+		<div class="start">
+			<p>Wellcome to the UCN Interactive Map. Press start to begin.</p>
+			<button onclick="startPlay()">Start</button>		
+		</div>
+		<div class="not_now administration">
+			<p>You don't have your report yet. Come back when you are ready to hand it in.</p>
+			<button onclick="clip1()">OK</button>		
+		</div>
+		<div class="not_now printing">
+			<p>You cannot print yet. You need the report and the binding material. Come back later.</p>
+			<button onclick="clip16()">OK</button>		
+		</div>
+		<div class="not_now bar">
+			<p>No party until you are done with the work.</p>
+			<button onclick="clip14()">OK</button>		
+		</div>
+		<div class="not_now end">
+			<p>You haven't managed to finish in time.</p>
+			<button onclick="End()">Close</button>	
+			<a href="index.html"><button>Start again</button></a>	
+		</div>
+		<div id="controlls2">
+			<div class="box"></div>
+			<div class="box controll" id="up"><img width="100" height="100" src="images/uparrow.png" /></div>
+			<div class="box"></div>
+			<div class="box controll" id="left"><img width="100" height="100" src="images/leftarrow.png" /></div>
+			<div class="box"></div>
+			<div class="box controll" id="right"><img width="100" height="100" src="images/rightarrow.png" /></div>
+			<div class="box"></div>
+			<div class="box controll" id="down"><img width="100" height="100" src="images/downarrow.png" /></div>
+			<div class="box"></div>
+		</div>
+		<div id="top_bar">
+			<h2>UCN Interactive Map</h2>
+				<div id="countdown">
+				<div id="time_left">Time left:</div>
+				<div id="timer">04:00</div>
+			</div>
+		</div>
+		
+		<video id="video">
+			<source src="video/VideoUcn.mp4">
+         <source src="video/VideoUcn.ogv">
+         <source src="video/VideoUcn.webm">
+		</video>
+	<div id="sound">
+	<audio src="audio/01.mp3" controls loop>
+		<p> your browser does not support the audio element.</p>
+	</audio>
+	</div>
+		<div id="controlls">
+			
+		</div>
+		</div>
+		<div id="information">
+			<div id="map">
+				<h4>UCN Sofiendalsvej Map</h4>
+				<div id="map_body">	
+				<canvas id="canvas" width="420" height="280"></canvas>
+				<canvas id="icon" width="420" height="280"></canvas>
+				</div>
+			</div>
+			<script type="text/javascript" src="js/canvas.js"></script>
+			<div id="tasks">	
+				<h4>Your Tasks</h4>	
+				<div id="task_body">	
+				<ul>
+					<li>Find Classmates</li>
+					<li>Have Lunch</li>
+					<li>Go to Bookstore</li>
+					<li>Print Report</li>
+					<li>Hand in Report</li>
+					<li>Go Have Fun</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

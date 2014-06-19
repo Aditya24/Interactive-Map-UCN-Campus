@@ -1,0 +1,123 @@
+#tasks{
+	float:left;	
+	margin-left:20px;
+	width:430px;
+	border:1px solid #d1d1d1;
+}
+
+#tasks ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#media{
+	position:relative;
+	float:left;
+}
+
+#silence{
+	float: left;
+	position: absolute;
+	top: 55px;
+	display: none;
+}
+
+.not_now{
+	width:300px;
+	height:120px;
+	background-color:#f2f2f2;
+	border: 1px solid #a1a1a1;
+	padding: 0 10px 0 10px;
+	text-align:center;
+	position:absolute;
+	left:210px;
+	top:180px;
+	display:none;
+}
+
+.start{
+	width:300px;
+	height:120px;
+	background-color:#f2f2f2;
+	border: 1px solid #a1a1a1;
+	padding: 0 10px 0 10px;
+	text-align:center;
+	position:absolute;
+	left:210px;
+	top:180px;
+	display:block;
+}
+
+#controlls2 {
+	width: 300px;
+	height: 300px;
+	float:left;
+	background: rgba(242,242,242,0.5);
+	position:absolute;
+	top:90px;
+	left:170px;
+	display:none;
+}
+
+.box {
+	width: 100px;
+	height: 100px;
+	float:left;
+}
+
+.controll {
+	cursor:pointer;
+}
+
+#map{
+	float:left;
+	position:relative;
+	width:430px;
+	margin-left:20px;
+	margin-bottom:20px;
+	border:1px solid #d1d1d1;
+}
+
+
+#canvas, #icon {
+	position:absolute;
+}
+
+#map_body{
+	width:420px;
+	height:280px;
+	margin:5px;
+}
+
+#task_body{
+	margin:5px;
+}
+
+#map h4, #tasks h4 {
+	background-color:#f2f2f2;
+	border-bottom:1px solid #d1d1d1;
+	margin-top:0;
+	padding:5px;
+}
+
+#top_bar h2{
+	margin-top:0;
+	float:left;
+}
+
+#countdown{
+	font-weight:bold;
+}
+
+#top_bar #countdown{
+	float:right
+} 
+
+#time_left{
+	margin-right:10px;
+}
+
+#time_left, #timer{
+	float:left;
+} 
